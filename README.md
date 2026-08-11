@@ -1,6 +1,5 @@
-# PodcastStudio · CICF
-
-Editor de podcasts não-destrutivo para o Centro de Inovação Carlos Fiolhais, Maia.
+# PodcastStudio 
+Editor de podcasts não-destrutivo
 
 ## Deploy no Railway
 
