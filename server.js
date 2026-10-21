@@ -15,7 +15,7 @@ const MIME = {
 // Only these files are public. The URL is never joined onto the filesystem path,
 // so ../ tricks and files like server.js, package.json or .git/ can't be reached.
 // Add new static assets here.
-const PUBLIC = new Set(['/index.html', '/manifest.json', '/sw.js', '/icon-192.svg', '/icon-512.svg']);
+const PUBLIC = new Set(['/index.html', '/manifest.json', '/sw.js', '/icon-192.svg', '/icon-512.svg', '/favicon.svg']);
 // Revalidated on every load so new deploys (and new service workers) are picked up
 const NO_CACHE = new Set(['/index.html', '/sw.js']);
 
