@@ -1,5 +1,5 @@
-const CACHE = 'podcaststudio-v2';
-const PRECACHE = ['/', '/index.html', '/manifest.json', '/icon-192.svg', '/icon-512.svg'];
+const CACHE = 'podcaststudio-v3';
+const PRECACHE = ['/', '/index.html', '/manifest.json', '/icon-192.svg', '/icon-512.svg', '/favicon.svg'];
 
 self.addEventListener('install', e => {
   e.waitUntil(
