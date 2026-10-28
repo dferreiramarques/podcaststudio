@@ -419,10 +419,6 @@ input[type=range]:focus-visible{outline-offset:6px}
   .main{padding:14px;gap:12px}
   .wv-head,.tbar,.p-card-body{padding-left:16px;padding-right:16px}
 }
-/* Desktop: mimic the browser-90%-zoom look natively, so 100% zoom ≡ previous 90% */
-@media(min-width:761px){
-  html{zoom:.9}
-}
 </style>
 </head>
 <body>
@@ -1375,9 +1371,9 @@ function drawBuilding(){
   if(appState!=='building'){rafId=null;return;}
   const W=canvas.width,H=canvas.height;
   cx.fillStyle=PAL.bg;cx.fillRect(0,0,W,H);
-  const t=Date.now()/600,bW=W*.4,bX=(W-bW)/2;
+  const ts=Date.now()/600,bW=W*.4,bX=(W-bW)/2;
   cx.fillStyle=A(PAL.wave,.15);cx.fillRect(bX,H/2-2,bW,4);
-  cx.fillStyle=PAL.wave;cx.fillRect(bX,H/2-2,(Math.sin(t)*.5+.5)*bW,4);
+  cx.fillStyle=PAL.wave;cx.fillRect(bX,H/2-2,(Math.sin(ts)*.5+.5)*bW,4);
   cx.fillStyle=A(PAL.fg,.5);cx.font='500 12px Inter,sans-serif';
   cx.textAlign='center';cx.textBaseline='middle';cx.fillText(t('cv_build'),W/2,H/2-18);
   rafId=requestAnimationFrame(drawBuilding);
