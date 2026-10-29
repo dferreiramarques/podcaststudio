@@ -1,4 +1,4 @@
-const CACHE = 'podcaststudio-v5';
+const CACHE = 'podcaststudio-v6';
 const CDN_CACHE = 'podcaststudio-cdn-v1';
 const PRECACHE = ['/', '/index.html', '/manifest.json', '/icon-192.svg', '/icon-512.svg', '/favicon.svg'];
 // Cross-origin assets the app depends on offline: fonts, icons, MP3 encoder

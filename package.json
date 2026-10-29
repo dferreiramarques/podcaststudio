@@ -1,7 +1,7 @@
 {
-  "name": "podcast-studio-cicf",
+  "name": "podcast-studio",
   "version": "1.0.0",
-  "description": "PodcastStudio CICF — non-destructive podcast editor",
+  "description": "PodcastStudio — non-destructive podcast editor",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
